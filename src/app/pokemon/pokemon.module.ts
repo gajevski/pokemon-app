@@ -1,3 +1,4 @@
+import { PokemonRoutingModule } from './pokemon-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListingComponent } from './ui-components/listing/listing.component';
@@ -6,7 +7,8 @@ import { PokemonService } from './pokemon.service';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    PokemonRoutingModule
   ],
   declarations: [ListingComponent, DetailsComponent],
   providers: [PokemonService]
